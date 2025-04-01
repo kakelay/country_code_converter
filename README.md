@@ -1,7 +1,6 @@
-The error is caused by the placeholder text **"TODO: Put a short description of the package here"** still being in your `README.md`. You need to remove all TODO sections and unnecessary comments.
+Here’s the updated and cleaned-up code for your `README.md` to ensure there are no placeholder comments:
 
-### **Fix Your `README.md`**
-Replace your `README.md` with the cleaned-up version below:
+### **Updated `README.md`**
 
 ```md
 # Country Code Converter
@@ -9,9 +8,9 @@ Replace your `README.md` with the cleaned-up version below:
 A Flutter package that provides a simple dropdown for selecting country codes and converting them into their full country names.
 
 ## Features
-- Displays a dropdown list of country codes
-- Converts selected country codes into full country names
-- Simple and easy-to-use UI
+- Displays a dropdown list of country codes.
+- Converts selected country codes into full country names.
+- Simple and easy-to-use UI.
 
 ## Installation
 Add this dependency to your `pubspec.yaml` file:
@@ -72,12 +71,13 @@ Contributions are welcome! Please submit a pull request or create an issue if yo
 This project is licensed under the MIT License.
 ```
 
-### **Next Steps**
-1. Save the updated `README.md` file.
-2. Try publishing again with:
+### **Steps to Follow**
+1. **Update your `README.md`** with the provided content.
+2. **Save the file**.
+3. Run this command to publish your package again:
 
    ```sh
    dart pub publish
    ```
 
-Let me know if you run into any issues! 🚀
+This should resolve the issue, and your package should be ready for publishing. Let me know if you need further assistance!
