@@ -1,45 +1,9 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+The error is caused by the placeholder text **"TODO: Put a short description of the package here"** still being in your `README.md`. You need to remove all TODO sections and unnecessary comments.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+### **Fix Your `README.md`**
+Replace your `README.md` with the cleaned-up version below:
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
-
-
-
+```md
 # Country Code Converter
 
 A Flutter package that provides a simple dropdown for selecting country codes and converting them into their full country names.
@@ -106,3 +70,14 @@ Contributions are welcome! Please submit a pull request or create an issue if yo
 
 ## License
 This project is licensed under the MIT License.
+```
+
+### **Next Steps**
+1. Save the updated `README.md` file.
+2. Try publishing again with:
+
+   ```sh
+   dart pub publish
+   ```
+
+Let me know if you run into any issues! 🚀
