@@ -37,3 +37,72 @@ const like = 'sample';
 TODO: Tell users more about the package: where to find more information, how to
 contribute to the package, how to file issues, what response they can expect
 from the package authors, and more.
+
+
+
+# Country Code Converter
+
+A Flutter package that provides a simple dropdown for selecting country codes and converting them into their full country names.
+
+## Features
+- Displays a dropdown list of country codes
+- Converts selected country codes into full country names
+- Simple and easy-to-use UI
+
+## Installation
+Add this dependency to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  country_code_converter: latest_version
+```
+
+Then run:
+
+```sh
+flutter pub get
+```
+
+## Usage
+
+Import the package:
+
+```dart
+import 'package:country_code_converter/country_code_converter.dart';
+```
+
+Use the `CountryCodeDropdownApp` widget in your Flutter application:
+
+```dart
+void main() {
+  runApp(CountryCodeDropdownApp());
+}
+```
+
+### Example
+
+```dart
+DropdownButton<String>(
+  value: _selectedCode,
+  hint: Text('Select Country Code'),
+  isExpanded: true,
+  items: countryCodes.map((String code) {
+    return DropdownMenuItem(
+      value: code,
+      child: Text(code),
+    );
+  }).toList(),
+  onChanged: (value) {
+    setState(() {
+      _selectedCode = value;
+      _convertedCode = value != null ? CountryCodeConverter.convertToFull(value) : null;
+    });
+  },
+)
+```
+
+## Contributing
+Contributions are welcome! Please submit a pull request or create an issue if you have any suggestions.
+
+## License
+This project is licensed under the MIT License.
