@@ -1,7 +1,9 @@
 name: country_code_converter
-description: "A new Flutter package project."
+description: "A simple Dart package to convert ISO Alpha-2 country codes to ISO Alpha-3 codes."
 version: 0.0.1
-homepage:
+homepage: https://github.com/kakelay/country_code_converter
+repository: https://github.com/kakelay/country_code_converter
+issue_tracker: https://github.com/kakelay/country_code_converter/issues
 
 environment:
   sdk: ^3.7.2
@@ -15,6 +17,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  test: ^1.21.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
